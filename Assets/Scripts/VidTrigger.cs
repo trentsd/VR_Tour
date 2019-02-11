@@ -5,21 +5,33 @@ using UnityEngine;
 public class VidTrigger : MonoBehaviour
 {
     public UnityEngine.Video.VideoPlayer video_player;
-
-    public UnityEditor.Animations.AnimatorController animator;
-
+    public Animator animator;
     public int stop;
+    public GameObject screen;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         video_player.playOnAwake = false;
-   
+        animator.enabled = true;
+        animator.SetBool("bool", false);
+        screen.GetComponent<Renderer>().enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        animStart();
+        Invoke("playVid", 1f);
+        
+    }
+
+    void animStart()
+    {
+        animator.SetBool("bool", true);
+    }
+
+    void playVid()
+    {
+        screen.GetComponent<Renderer>().enabled = true;
         video_player.Play();
     }
 
@@ -27,4 +39,5 @@ public class VidTrigger : MonoBehaviour
     {
         vp.Stop();
     }
+
 }
