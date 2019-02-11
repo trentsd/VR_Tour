@@ -14,11 +14,14 @@ public class VidTrigger : MonoBehaviour
         video_player.playOnAwake = false;
         animator.enabled = true;
         animator.SetBool("bool", false);
+
+        animator.GetComponent<Renderer>().enabled = false;
         screen.GetComponent<Renderer>().enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        animator.GetComponent<Renderer>().enabled = true;
         animStart();
         Invoke("playVid", 1f);
         
@@ -38,6 +41,12 @@ public class VidTrigger : MonoBehaviour
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
         vp.Stop();
+    }
+
+    void closeTv()
+    {
+        animator.GetComponent<Renderer>().enabled = false;
+        screen.GetComponent<Renderer>().enabled = false;
     }
 
 }
