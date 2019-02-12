@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hub.unity
     guid: 92cadcef82d17ee4ea3f6fc3d9cd1b18
+  - enabled: 1
+    path: Assets/Scenes/3dVideoScene.unity
+    guid: e02c737342420b1418b63f6e0418a412
   m_configObjects: {}
