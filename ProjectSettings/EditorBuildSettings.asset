@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3dVideoScene.unity
     guid: e02c737342420b1418b63f6e0418a412
+  - enabled: 1
+    path: Assets/Scenes/Scavenger Hunt.unity
+    guid: 1074b58748b0b47d6ab701132fe404ec
   m_configObjects: {}
