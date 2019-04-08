@@ -156,9 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenesToLoad:
-  - 3dExplorer
+  - Hub
   - Outside
-  - DestinationScene
+  - 3dVideoScene
+  - Scavenger Hunt
   activeScene: 
   useFade: 0
   fadeOverlay: {fileID: 0}
@@ -745,11 +746,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2247677257108297471, guid: 17e1f41a26333ad4b97cc2f8243661f1,
-        type: 3}
-      propertyPath: m_Depth
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 2247677257108297468, guid: 17e1f41a26333ad4b97cc2f8243661f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -794,6 +790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247677257108297471, guid: 17e1f41a26333ad4b97cc2f8243661f1,
+        type: 3}
+      propertyPath: m_Depth
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17e1f41a26333ad4b97cc2f8243661f1, type: 3}
