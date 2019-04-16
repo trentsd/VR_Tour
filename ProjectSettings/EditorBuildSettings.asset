@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scavenger Hunt.unity
     guid: 1074b58748b0b47d6ab701132fe404ec
+  - enabled: 1
+    path: Assets/Scenes/Working.unity
+    guid: 77f267e7ae36f8f4ca3aec8b470fc055
   m_configObjects: {}
